@@ -29,7 +29,7 @@ jobs:
         EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
         OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       run: |
-        python main.py --save-report --save-raw
+        python main.py --save-raw
 
     - name: Read generated report
       id: report
